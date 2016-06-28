@@ -1,0 +1,9 @@
+<div class="panel">
+  <div class="panel-body">
+      <div class="row">
+    {{#each books as |book|}}
+      {{book-card book=book onRead=(action "onRead")}}
+    {{/each}}
+    </div>
+  </div>
+</div>

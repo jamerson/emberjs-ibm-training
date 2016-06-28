@@ -1,0 +1,10 @@
+<!-- Component: book-list -->
+<div class="panel">
+  <div class="panel-body">
+    <div class="row">
+        {{#each books as |item|}}
+            {{book-card book=item readClicked=(action "readClicked")}}
+        {{/each}}
+    </div>
+  </div>
+</div>

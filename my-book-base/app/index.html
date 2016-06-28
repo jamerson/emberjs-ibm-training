@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyBookBase</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/my-book-base.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <body>
+    <div class="page-header">
+      <h1>My Books <small>Your personal bookstore</small></h1>
+    </div>
+
+    <!-- Component: category-list -->
+    <div class="panel">
+      <label for="basic-url">Categories</label>
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#">All</a></li>
+        <li role="presentation"><a href="#">Nature</a></li>
+        <li role="presentation"><a href="#">Animals</a></li>
+        <li role="presentation"><a href="#">Terror</a></li>
+        <li role="presentation"><a href="#">Music</a></li>
+        <li role="presentation"><a href="#">Scifi</a></li>
+      </ul>
+    </div>
+
+    {{content-for "body-footer"}}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/my-book-base.js"></script>
+  </body>
+</html>
